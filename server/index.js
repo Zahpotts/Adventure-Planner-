@@ -16,11 +16,7 @@ app.use(
 
 app.use(webpackHotMiddleware(compiler));
 
-// Catch-all to serve index.html for React Router
-// app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, '/public/index.html'));
-// });
-
+//
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`);
