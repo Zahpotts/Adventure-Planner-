@@ -1,0 +1,71 @@
+body{
+    background: url('/public/outdoor-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+.overlay {
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+  }
+  /* Add a gradient background to the weather card */
+.mb-4.p-4.rounded.shadow-sm{
+    background: linear-gradient(to right, #66ddf5, #2980b9);
+    color: white;
+}
+/* Container for the activity recommendations */
+.activity-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Title of each recommendation */
+.activity-card h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Description text on recommanded card */
+.activity-card p {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* View on map button */
+.activity-card .btn-outline-primary {
+    margin-top: 12px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.activity-card .btn-outline-primary:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* A little spacing to separate the list items */
+.list-group-item {
+    padding: 15px 20px;
+    border: none;
+    background-color: transparent;
+}
